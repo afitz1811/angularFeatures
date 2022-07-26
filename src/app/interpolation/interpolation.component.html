@@ -1,1 +1,36 @@
-<p>interpolation works!</p>
+
+<h2>Basic binding</h2>
+<p>{{ title }}</p>
+
+<h2>Concatenate two strings</h2>
+<p>{{ 'Welcome to ' + title }}</p>
+
+<h2>Title return via method</h2>
+<p>{{ getTitle()}}</p>
+
+<h2>Maths</h2>
+<p>100 x 80 = {{100*80}}</p>
+<p>Largest : {{max(7, 19)}}</p>
+<p>Largest : {{max(13, 2)}}</p>
+
+
+<h2>Bind to element properties</h2>
+<p>This is <span class="{{ classColour }}">{{classColour}}</span></p>
+<p style.color={{classColour}}>{{ 'This is ' + classColour }}</p>
+
+<img src="{{imageURL}}"
+      alt =""
+      class="w-50">
+
+
+<h2>Template Reference Example</h2>
+<label for="">Enter Your Name</label>
+<input type="text"
+      #name
+      (keyup)="0"
+      id="name">
+<p>Welcome {{name.value}}</p>
+
+<h2>Cross Site Scripting</h2>
+<p>{{ script }}</p>
+<p>{{ div }}</p>
