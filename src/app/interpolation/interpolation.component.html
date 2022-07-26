@@ -32,5 +32,12 @@
 <p>Welcome {{name.value}}</p>
 
 <h2>Cross Site Scripting</h2>
+<p ngNonBindable>{{ script }}</p>
 <p>{{ script }}</p>
 <p>{{ div }}</p>
+
+<h2>Pipes with interpolation</h2>
+<p>uppercase pipe: {{ title | uppercase }}</p>
+<p>pipe chain: {{title | uppercase | lowercase}}</p>
+<p>json pipe: {{items | json}}</p>
+

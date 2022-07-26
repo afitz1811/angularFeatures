@@ -17,6 +17,12 @@ export class InterpolationComponent implements OnInit {
   imageURL = "https://img.freepik.com/premium-photo/kitten-head-with-paw-up-peeking-blank-white-sign-placard-pet-kitten-curiously-peeking-white-background-tabby-baby-cat-showing-placard-template-long-web-banner-with-copy-space_221542-2279.jpg?w=1380";
   script ='<script>alert("You are hacked")</script>';
   div='<div>this is a div</div>';
+  items = [
+    { type: 'Orange', Amount: 50 },
+    { type: 'Apple', Amount: 67 },
+    { type: 'Banana', Amount: 6 },
+    { type: 'Grape', Amount: 1 }
+  ];
 
 
   getTitle() : string {
