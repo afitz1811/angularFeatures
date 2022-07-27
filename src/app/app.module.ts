@@ -9,6 +9,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { NestedExampleComponent } from './nested-example/nested-example.component';
+import { NestedChildComponent } from './nested-child/nested-child.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     InterpolationComponent,
     NotfoundComponent,
     PropertybindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    NestedExampleComponent,
+    NestedChildComponent
   ],
   imports: [
     BrowserModule,
