@@ -1,5 +1,3 @@
-import { NumberSymbol } from "@angular/common";
-
 export class Customer {
   customerNo :  number;
   name : string;

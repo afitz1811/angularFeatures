@@ -11,6 +11,7 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { NestedExampleComponent } from './nested-example/nested-example.component';
 import { NestedChildComponent } from './nested-child/nested-child.component';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NestedChildComponent } from './nested-child/nested-child.component';
     PropertybindingComponent,
     EventBindingComponent,
     NestedExampleComponent,
-    NestedChildComponent
+    NestedChildComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,
