@@ -32,3 +32,8 @@
 <h4>Key Combinations</h4>
 <input (keyup.control.shift.enter)="keyValue4=$any($event.target).value">
 <p>You entered {{keyValue4}}</p>
+
+<h3>Two Way Binding with ngModel</h3>
+<input type="text" [(ngModel)]="ngModelValue">
+<p> You entered {{ngModelValue}}</p>
+<button (click)="clearValue()">Clear</button>

@@ -24,6 +24,8 @@ export class EventBindingComponent implements OnInit {
   keyValue3 = "";
   keyValue4 = "";
 
+  ngModelValue = "";
+
   clickMe(){
     this.clickCount++;
   }
@@ -35,5 +37,9 @@ export class EventBindingComponent implements OnInit {
   tempRefInput(element : any){
     console.log(element);
     this.tempRefVal = element.value;
+  }
+
+  clearValue(){
+    this.ngModelValue = "";
   }
 }
