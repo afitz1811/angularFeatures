@@ -1,0 +1,25 @@
+<h1 [innerText]="title"></h1>
+
+<h3>Disabled Property Binding</h3>
+<button [disabled]="isDisabled">I am disabled</button>
+
+<h3>Security</h3>
+<p [textContent]="evilText"></p>
+
+<h3>Binding HTML Straings to Elements</h3>
+<p [innerHTML]="text1"></p>
+<div [innerHTML]="text2"></div>
+
+<h3>Img SRC Binding</h3>
+<img [src]="itemImageUrl">
+<img bind-src="itemImageUrl">
+
+<h3>Concatenate Two Strings</h3>
+<p [innerText]="'Hello & Welcome to '+ 'Angular Data binding '"></p>
+<p [innerText]="string1 + ' ' +string2"></p>
+
+<h3>Mathematical Expressions</h3>
+<p [innerText]="100*80"></p>
+
+<h3>Sytles</h3>
+<p [style.color]="colour">This is red</p>

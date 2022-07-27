@@ -1,0 +1,34 @@
+<h1>Event Binding</h1>
+
+<h3>Basic Event Example</h3>
+<button (click)="clickMe()">Click Me</button>
+<p>You have clicked {{clickCount}} times</p>
+
+<h3>Multiple Event Handler</h3>
+<button (click)="clickMe(); clickCount2=clickCount">Click Me</button>
+<p>You have clicked {{clickCount}} times</p>
+<p>You have clicked {{clickCount2}} times</p>
+
+<h3>Event Payload</h3>
+<input type="text" (input)="handleInput($event)">
+<p>You have entered {{inputValue}}</p>
+
+<h3>Template Reference</h3>
+<input type="text" (input)="tempRefInput(el)" #el>
+<p>You have entered {{tempRefVal}}</p>
+
+<h3>Key Events</h3>
+<input (keyup)="keyValue1= $any($event.target).value" />
+<p>You entered {{keyValue1}}</p>
+
+<h4>Enter Key Event</h4>
+<input (keyup.enter)="keyValue2=$any($event.target).value">
+<p>You entered {{keyValue2}}</p>
+
+<h4>Multiple Key Events</h4>
+<input (keyup.enter)="keyValue3=$any($event.target).value" (keyup.escape)="$any($event.target).value='';keyValue3=''">
+<p>You entered {{keyValue3}}</p>
+
+<h4>Key Combinations</h4>
+<input (keyup.control.shift.enter)="keyValue4=$any($event.target).value">
+<p>You entered {{keyValue4}}</p>
