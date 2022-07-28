@@ -15,6 +15,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
+import { NgstyleComponent } from './ngstyle/ngstyle.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { NgifComponent } from './ngif/ngif.component';
     NgforComponent,
     ActivitiesComponent,
     NgswitchComponent,
-    NgifComponent
+    NgifComponent,
+    NgclassComponent,
+    NgstyleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+<h1>ngClass</h1>
+
+<h3>ngClass with a String</h3>
+<div [ngClass]="'red size20'">
+  Red Text with Size 20px
+</div>
+
+<h3>ngClass with an Array</h3>
+<div [ngClass]="['red', 'size20']">
+  Red Text with Size 20px
+</div>
+
+<h3>ngClass with an Object</h3>
+<div [ngClass]="{'red':true, 'size20':true}">
+  Red Text with Size 20px
+</div>
+
+<h3>ngClass with a Property String</h3>
+<div [ngClass]="cssString">
+  Text from a component property
+</div>
+
+<h3>ngClass with an Array from the component</h3>
+<div [ngClass]="cssArray">
+  Text from a component property
+</div>
+
+<h3>ngClass with an Object from the component</h3>
+<div [ngClass]="cssObject">
+  Text from a component property
+</div>
+
+<h3>ngClass with Conditions</h3>
+<button (click)="toggleOn=!toggleOn">Toggle CSS</button>
+<div [class.red]="toggleOn">
+  <p>This is just some content</p>
+</div>
+<div [ngClass]="{'size20' : !toggleOn}">
+  <p>This is just some content</p>
+</div>
+<div [ngClass]="toggleOn ? 'green' : 'purple'">
+  <p>This is just some content</p>
+</div>

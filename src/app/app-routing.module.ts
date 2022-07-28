@@ -5,8 +5,10 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { HomeComponent } from './home/home.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { NestedExampleComponent } from './nested-example/nested-example.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'ngfor', component: NgforComponent},
   { path: 'ngswitch', component: NgswitchComponent},
   { path: 'ngif', component: NgifComponent},
+  { path: 'ngclass', component: NgclassComponent},
+  { path: 'ngstyle', component: NgstyleComponent},
   { path: 'activities', component: ActivitiesComponent},
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: NotfoundComponent}
