@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivitiesComponent } from './activities/activities.component';
+import { DataParentComponent } from './data-parent/data-parent.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { HomeComponent } from './home/home.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'ngclass', component: NgclassComponent},
   { path: 'ngstyle', component: NgstyleComponent},
   { path: 'pipes', component: PipesComponent},
+  { path: 'dataparent', component: DataParentComponent},
   { path: 'activities', component: ActivitiesComponent},
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: NotfoundComponent}

@@ -1,0 +1,11 @@
+<h1>Sharing Data With Child</h1>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{item}}
+  </li>
+</ul>
+
+<app-data-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-data-child>
+
+

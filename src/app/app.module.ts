@@ -18,6 +18,8 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { DataParentComponent } from './data-parent/data-parent.component';
+import { DataChildComponent } from './data-child/data-child.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { PipesComponent } from './pipes/pipes.component';
     NgifComponent,
     NgclassComponent,
     NgstyleComponent,
-    PipesComponent
+    PipesComponent,
+    DataParentComponent,
+    DataChildComponent
   ],
   imports: [
     BrowserModule,
