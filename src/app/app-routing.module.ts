@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { NestedExampleComponent } from './nested-example/nested-example.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'events', component: EventBindingComponent},
   { path: 'nested', component: NestedExampleComponent},
   { path: 'ngfor', component: NgforComponent},
+  { path: 'ngswitch', component: NgswitchComponent},
+  { path: 'ngif', component: NgifComponent},
   { path: 'activities', component: ActivitiesComponent},
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: NotfoundComponent}
