@@ -12,4 +12,6 @@ export class NgifComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMe : boolean = false;
+
 }

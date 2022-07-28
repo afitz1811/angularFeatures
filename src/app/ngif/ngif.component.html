@@ -1,1 +1,36 @@
-<p>ngif works!</p>
+<div class="card mt-4">
+  <div class="card-header">
+    Basic ngIf Example
+  </div>
+  <div class="card-body">
+    Show: <input type="checkbox"
+    [(ngModel)]="showMe">
+
+    <p *ngIf="showMe">ShowMe is Checked</p>
+    <p *ngIf="!showMe">ShowMe is Unchecked</p>
+
+    <h3>ngIf Else</h3>
+    <p *ngIf="showMe; else elseBlock1">ShowMe is Checked</p>
+    <ng-template #elseBlock1>
+      <p>This a ng-template for ngIf Else</p>
+    </ng-template>
+
+    <h3>ngIf Then Else</h3>
+    <p *ngIf="showMe; then thenBlock else elseBlock2">ShowMe is Checked</p>
+    <ng-template #thenBlock>
+      <p>This a ng-template for ngIf Then</p>
+    </ng-template>
+    <ng-template #elseBlock2>
+      <p>This a ng-template for ngIf Then Else</p>
+    </ng-template>
+
+    <h3>using hidden </h3>
+    <p [hidden]="showMe">
+    content to render, when the condition is true  using hidden property binding
+    </p>
+    <p [hidden]="!showMe">
+    content to render, when the condition is false. using hidden property binding
+    </p>
+
+  </div>
+</div>
