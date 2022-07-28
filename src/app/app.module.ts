@@ -17,6 +17,7 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { NgstyleComponent } from './ngstyle/ngstyle.component';
     NgswitchComponent,
     NgifComponent,
     NgclassComponent,
-    NgstyleComponent
+    NgstyleComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

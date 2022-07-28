@@ -11,6 +11,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { PipesComponent } from './pipes/pipes.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'ngif', component: NgifComponent},
   { path: 'ngclass', component: NgclassComponent},
   { path: 'ngstyle', component: NgstyleComponent},
+  { path: 'pipes', component: PipesComponent},
   { path: 'activities', component: ActivitiesComponent},
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: NotfoundComponent}
