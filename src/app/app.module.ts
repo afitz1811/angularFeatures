@@ -13,6 +13,8 @@ import { NestedExampleComponent } from './nested-example/nested-example.componen
 import { NestedChildComponent } from './nested-child/nested-child.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { NgifComponent } from './ngif/ngif.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { ActivitiesComponent } from './activities/activities.component';
     NestedExampleComponent,
     NestedChildComponent,
     NgforComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    NgswitchComponent,
+    NgifComponent
   ],
   imports: [
     BrowserModule,

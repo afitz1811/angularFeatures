@@ -14,6 +14,5 @@ export class ActivitiesComponent implements OnInit {
 
   title = "Activities";
   username = "";
-  isDisabled = true;
 
 }
