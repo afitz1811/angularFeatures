@@ -12,6 +12,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { NestedExampleComponent } from './nested-example/nested-example.component';
 import { NestedChildComponent } from './nested-child/nested-child.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
     EventBindingComponent,
     NestedExampleComponent,
     NestedChildComponent,
-    NgforComponent
+    NgforComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,
