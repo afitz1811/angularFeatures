@@ -1,1 +1,21 @@
-<p>ngstyle works!</p>
+<h1>ngStyle Examples</h1>
+
+<h3>Controlling a style with an input</h3>
+Type a colour: <input type="text" [(ngModel)]="colour"><br>
+Type a size: <input type="text" [(ngModel)]="size"><br>
+Type a weight: <input type="text" [(ngModel)]="weight"><br>
+<div [ngStyle]="{'color': colour}">
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+</div>
+
+<div [ngStyle]="{'background-color': error ? 'blue' : 'red'}">
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+</div>
+
+<p [ngStyle]="{'color': colour,
+               'font-size.px': size,
+               'font-weight': weight}">
+     Multiple styles
+</p>

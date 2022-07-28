@@ -12,4 +12,9 @@ export class NgstyleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  colour : string = "";
+  error : boolean = false;
+  size : string = "";
+  weight : string = "";
+
 }
